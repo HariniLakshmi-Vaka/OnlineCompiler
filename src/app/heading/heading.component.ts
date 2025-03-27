@@ -245,6 +245,7 @@ export class HeadingComponent {
       })
       .afterClosed().subscribe(
         (data) =>{
+         if(data===true)
           this.router.navigate(['/login']);
         }
       );
